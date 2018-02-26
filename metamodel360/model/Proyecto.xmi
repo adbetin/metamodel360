@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<semana2:Proyecto
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:semana2="http://www.example.org/semana2"
+    xsi:schemaLocation="http://www.example.org/semana2 semana2.ecore"
+    nombre="Villa Campestre">
+  <toures nombre="Etapa 1">
+    <panoramas
+        nombre="Piscina"
+        imagen="images/piscina.jpg">
+      <hotspots
+          nombre="Entrada"
+          destino="//@toures.0/@panoramas.1">
+        <posicion
+            x="-4.9"
+            y="2.0"
+            z="1.9"/>
+        <rotacion
+            x="0.3"
+            y="2.9"
+            z="4.8"/>
+      </hotspots>
+    </panoramas>
+    <panoramas
+        nombre="Entrada"
+        imagen="images/entrada">
+      <hotspots
+          nombre="Piscina"
+          destino="//@toures.0/@panoramas.0">
+        <posicion
+            x="0.9"
+            y="1.0"
+            z="-7.6"/>
+        <rotacion
+            x="2.0"
+            y="4.0"
+            z="-6.0"/>
+      </hotspots>
+    </panoramas>
+  </toures>
+</semana2:Proyecto>
