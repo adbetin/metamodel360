@@ -1,0 +1,13 @@
+context metamodel360! Posicion {
+
+	critique noPuedeExistirHostpotEnZIgualCero {
+		
+		guard : true
+		check : self.z <> 0
+		message : "La posicion Z con cordenada " + self.z + " debe ser diferente de 0"
+		fix {
+			title : "Desea reparar la cordenada en z igual a " + self.z 
+			do { self.z = 1; }
+		}
+	}
+}

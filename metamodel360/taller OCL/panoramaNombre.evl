@@ -1,0 +1,7 @@
+context metamodel360! Panorama {
+	critique twoPanoramsDontHaveSameName {
+		guard : true
+		check : Panorama.allInstances.select(p|p <> self ).forAll(p|p.name <> self.name)
+		message : "No puede haber dos panoramas con el mismo nombre"
+	}
+}

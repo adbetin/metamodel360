@@ -1,0 +1,8 @@
+context metamodel360!Hotspot {
+
+	critique hostpotAtoBMustHostpotBtoA {
+		guard : self.destino.isDefined()
+		check :  self.destino.hotspots.exists(h | h.destino = Panorama.allInstances.selectOne(p | p.hotspots.includes(self)))
+		message : "El panorama " + self.destino.name + " debe tener un hostpot con direccion al panorama " + Panorama.allInstances.selectOne(p | p.hotspots.includes(self)).name
+	}
+}

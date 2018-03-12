@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metamodel360:Proyecto
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:metamodel360="http://www.example.org/metamodel360"
+    name="Villa Campestre">
+  <toures name="Etapa 1">
+    <panoramas
+        name="Piscina"
+        imagen="images/piscina.jpg">
+      <hotspots
+          name="hCocina"
+          destino="Cocina">
+        <posicion
+            x="-4.9"
+            y="2.0"
+            z="1.9"/>
+        <rotacion
+            x="0.3"
+            y="2.9"
+            z="4.8"/>
+      </hotspots>
+      <hotspots
+          name="hPano"
+          destino="pano"/>
+    </panoramas>
+    <panoramas
+        name="Cocina"
+        imagen="imagen/Cocina.jpg">
+      <hotspots
+          name="hPiscina"
+          destino="Piscina">
+        <posicion
+            x="3.0"
+            y="4.0"
+            z="6.0"/>
+        <rotacion
+            x="5.0"
+            y="6.0"
+            z="9.0"/>
+      </hotspots>
+    </panoramas>
+    <panoramas
+        name="pano"
+        imagen="imagen/pano.jpg">
+      <hotspots
+          name="pano"
+          destino="Piscina">
+        <rotacion
+            x="-1.0"
+            y="-2.0"
+            z="-3.0"/>
+      </hotspots>
+    </panoramas>
+  </toures>
+</metamodel360:Proyecto>

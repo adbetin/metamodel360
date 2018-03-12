@@ -1,0 +1,53 @@
+context metamodel360!Rotacion {
+	critique rotationInXMustBeBetween0And360{
+		guard : true
+		check : self.x > 0 and self.x < 360
+		message : "La rotacion X con cordenada " + self.x +  " debe estar entre 0 y 360"
+		fix {
+			title : "Desea reparar cordenada X?" + self.x
+			do {
+				if (self.x.isUndefined()) {
+					self.x = 0; 
+				} else if (self.x < 0){
+					self.x = 0;
+				} else if ( self.x > 360){
+					self.x = 360;
+				}
+			}
+		}
+	}
+	critique rotationInYMustBeBetween0And360{
+		guard : true
+		check : self.y > 0 and self.y < 360
+		message : "La rotacion Y con cordenada " + self.y + " debe estar entre 0 y 360"
+		fix {
+			title : "Desea reparar cordenada Y?"
+			do {
+				if (self.y.isUndefined()) {
+					self.y = 0; 
+				} else if (self.y < 0){
+					self.y = 0;
+				} else if ( self.y > 360){
+					self.y = 360;
+				}
+			}
+		}
+	}
+	critique rotationInZMustBeBetween0And360{
+		guard : true
+		check : self.z > 0 and self.z < 360
+		message : "La rotacion Z con cordenada " + self.z + " debe estar entre 0 y 360"
+		fix {
+			title : "Desea reparar cordenada Z?"
+			do {
+				if (self.z.isUndefined()) {
+					self.z = 0; 
+				} else if (self.z < 0){
+					self.z = 0;
+				} else if ( self.z > 360){
+					self.z = 360;
+				}
+			}
+		}
+	}
+}
