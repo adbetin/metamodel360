@@ -2,6 +2,6 @@ context metamodel360!Tour {
 	critique TourMustContainTwoPanorams{
 		guard: true
 		check: self.panoramas.size() >= 2
-		message: "El tour " + self.nombre + " debe contener por lo menos dos panoramas"
+		message: "El tour " + self.name + " debe contener por lo menos dos panoramas"
 	}
 }

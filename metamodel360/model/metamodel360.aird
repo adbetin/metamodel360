@@ -7,6 +7,8 @@
     <semanticResources>metamodel360.genmodel</semanticResources>
     <semanticResources>../build.properties</semanticResources>
     <semanticResources>../plugin.properties</semanticResources>
+    <semanticResources>../instancias/Proyecto.xmi</semanticResources>
+    <semanticResources>../instancias/Proyecto_malo.xmi</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_YX_HUAoiEeiniaBMFiuoNw">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_feB7MBqwEeikfvLv9RSrZw" name="metamodel360 class diagram" repPath="#_fdK_kBqwEeikfvLv9RSrZw">

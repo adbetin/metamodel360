@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metamodel360:Proyecto xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:metamodel360="http://www.example.org/metamodel360" name="Villa Campestre Malo">
+  <toures name="Etapa 2">
+    <panoramas name="Centro de Convenciones" imagen="images/cc.jpg">
+      <hotspots name="hSalida" destino="Salida"/>
+    </panoramas>
+    <panoramas name="Salida" imagen="images/salida.jpg">
+      <hotspots name="hParque" destino="Parque">
+        <posicion x="9.0" y="-3.0"/>
+        <rotacion x="-4.0" y="-5.0" z="-9.0"/>
+      </hotspots>
+    </panoramas>
+    <panoramas name="Corredor" imagen="images/corredor.jpg"/>
+    <panoramas name="Corredor" imagen="images/corredor.jpg"/>
+  </toures>
+  <toures name="Etapa 3">
+    <panoramas name="Parque" imagen="images/parque.jpg"/>
+  </toures>
+</metamodel360:Proyecto>

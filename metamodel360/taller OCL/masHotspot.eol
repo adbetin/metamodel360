@@ -1,6 +1,6 @@
 printClasses();
 operation  printClasses(){
-	var panoram : Any =  Panorama.allInstances.select(p | p.hotspots.size() = Panorama.AllInstances.collect(p1 | p1.hotspots.size()).max()).collect(p | p.nombre);
+	var panoram : Any =  Panorama.allInstances.select(p | p.hotspots.size() = Panorama.AllInstances.collect(p1 | p1.hotspots.size()).max()).collect(p | p.name);
 	if( panoram.size() > 1) {
 		panoram.concat(", ").println("Los panorama que tiene mas hostpot son: ");
 	} else { 
